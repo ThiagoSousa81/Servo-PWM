@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "Thiago Sousa",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-pi-pico-w", "id": "pico", "top": -41.65, "left": -236.45, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": -40.4, "left": -96, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "pico:GND.8", "servo1:GND", "black", [ "h29.11", "v19.2" ] ],
+    [ "pico:3V3", "servo1:V+", "red", [ "h19.51", "v9.6" ] ],
+    [ "pico:GP22", "servo1:PWM", "blue", [ "h19.51", "v-48" ] ]
+  ],
+  "dependencies": {}
+}
