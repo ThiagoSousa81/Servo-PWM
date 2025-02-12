@@ -11,7 +11,7 @@ $f_{PWM}\ =\ \frac{f_{clock}}{\left(divisor\ inteiro+\frac{divisor\ fracionario}
 </h3>
 
 $f_{PWM}$: Frequência do PWM<br>
-$f_{clock}$: Frequência do sinal de Clock<br>
+$f_{clock}$: Frequência do sinal de Clock (125 MHz)<br>
 $divisor\ inteiro$: Parte inteira do divisor de clock (8 bits)<br>
 $divisor\ fracionario$: Parte fracionária do divisor de clock (4 bits)<br>
 $wrap$: Valor máximo de contagem. Possui 16 bits
