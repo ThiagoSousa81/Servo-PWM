@@ -44,8 +44,6 @@ int main() {
     // 500µs = 625 níveis de PWM
     sleep_ms(5000);
 
-    int32_t i = 500;
-
     // Transição suave de 0° a 180°
     uint32_t start_level = us_to_level(500);  // 625 
     uint32_t end_level = us_to_level(2400);   // 3000
