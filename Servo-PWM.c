@@ -32,13 +32,16 @@ int main() {
 
     // Definindo as posições solicitadas:
     sleep_ms(200);
-    pwm_set_chan_level(slice_num, channel, us_to_level(2400)); // 2400µs → 3000
+    pwm_set_chan_level(slice_num, channel, us_to_level(2400)); 
+    // 2400µs = 3000 níveis de PWM
     sleep_ms(5000);
         
-    pwm_set_chan_level(slice_num, channel, us_to_level(1470)); // 1470µs → 1838
+    pwm_set_chan_level(slice_num, channel, us_to_level(1470)); 
+    // 1470µs = 1838 níveis de PWM
     sleep_ms(5000);
         
-    pwm_set_chan_level(slice_num, channel, us_to_level(500));  // 500µs → 625
+    pwm_set_chan_level(slice_num, channel, us_to_level(500));  
+    // 500µs = 625 níveis de PWM
     sleep_ms(5000);
 
     int32_t i = 500;
