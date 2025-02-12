@@ -47,10 +47,10 @@ int main() {
     int32_t i = 500;
 
     // Transição suave de 0° a 180°
-    uint32_t start_level = us_to_level(500);  // 625
+    uint32_t start_level = us_to_level(500);  // 625 
     uint32_t end_level = us_to_level(2400);   // 3000
 
-    while(1){
+    while(true){
     // Loop principal
       for (uint32_t i = start_level; i <= end_level; i+=5) {
         pwm_set_chan_level(slice_num, channel, i);

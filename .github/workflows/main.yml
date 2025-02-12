@@ -6,13 +6,12 @@
 # Substitua nome_do_projeto pelo nome de seu projeto
 name: Build Raspberry Pi Pico W Project
 # Automação do fluxo de trabalho - Thiago Sousa - https://github.com/ThiagoSousa81
-on:
-  push:
-    branches:
-      - main
+on: 
   pull_request:
     branches:
       - main
+
+  workflow_dispatch:
 
 jobs:
   build:
@@ -54,9 +53,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: pico-artifacts
-          path: |
-            build/${{ env.PROJECT_NAME }}.elf
-            build/${{ env.PROJECT_NAME }}.uf2
+          #path: |
+          #  build/${{ env.PROJECT_NAME }}.elf
+          #  build/${{ env.PROJECT_NAME }}.uf2
 
           # Libere o comando abaixo se quiser que a pasta build seja carregada inteira nos artefatos
-            #path: build/*
+          path: build/*
