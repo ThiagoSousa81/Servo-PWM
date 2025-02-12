@@ -1,5 +1,7 @@
 # Servo e PWM
 
+### [Vídeo](https://youtu.be/mYYL3PFYblw)
+
 ### Controle de um servomotor usando a interface PWM do RP2040
 
 É assim que é definida a frequência do PWM:
