@@ -55,7 +55,8 @@ target_include_directories(Servo-PWM PRIVATE
 
 # Add any user requested libraries
 target_link_libraries(Servo-PWM 
-        
+        hardware_pwm
+        hardware_clocks
         )
 
 pico_add_extra_outputs(Servo-PWM)
